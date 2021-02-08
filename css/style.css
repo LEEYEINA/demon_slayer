@@ -67,7 +67,7 @@ body {
   position: absolute;
   left: 0; top: 50%;
   transform: translateY(-50%);
-  /* outline: 2px solid green; */
+  /* outline: 2px solid white; */
 }
 
 #main_header h1 > img {
@@ -183,6 +183,7 @@ body {
   color: #333;
   padding: 60px;
   display: none;
+  box-shadow: 2px 2px 4px rgba(0,0,0, 0.6);
 }
 
 
@@ -196,4 +197,18 @@ body {
 
 #synop_popup p {
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .lcear {
+    clear: both;
+  }
+  #gallery #main ul.thumb {
+    width: 100%;
+  }
+  #gallery #main ul.thumb li {
+    width: calc(100%/3);
+    float: left;
+    overflow: hidden;
+  }
 }

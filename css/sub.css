@@ -51,3 +51,69 @@ body {
   margin-right: 10px;
 }
 
+
+/* 갤러리 */
+
+#gallery #main_header {
+  position: relative;
+  width: 100%;
+  background: #000;
+  height: 100px;
+}
+
+#gallery .header_box {
+  display: none;
+}
+
+#gallery #main figure {
+  width: 1000px;
+  width: 100%;
+  /* outline: 2px solid red; */
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#gallery #main figure img {
+  width: 100%;
+}
+
+#gallery #main ul {
+  /* outline: 2px solid green; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#gallery #main ul li {
+  width: calc(100% / 6);
+  float: left;
+  /* outline: 2px solid red; */
+  border: 1px solid #707070;
+  overflow: hidden;
+}
+#gallery #main ul li:hover {
+  border: 4px solid #ED1C24;
+} 
+
+#gallery #main ul li a img {
+  width: 100%;
+  display: block;
+}
+
+/* 갤러리 모바일 목록 구성 */
+@media screen and (max-width: 500px) {
+  .clear {
+    clear: both;
+  }
+  #gallery #main ul.thumb {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 20px;
+  }
+  #gallery #main ul.thumb li {
+    width: calc((100% - 40px) / 3);
+    float: left;
+    overflow: hidden;
+    
+  }
+}
