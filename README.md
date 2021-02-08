@@ -1,2 +1,2 @@
-# demon_slayer
-귀멸의칼날-선생님
+# demon-slayer
+영화 프로모션 홈페이지

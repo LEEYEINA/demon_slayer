@@ -1,0 +1,53 @@
+/* sub.css */
+
+/* 배경 초기화 */
+body {
+  background: #000;
+}
+
+#video .container{
+  /* border: 2px solid red; */
+}
+
+#video #main_header {
+  position: relative;
+  width: 100%;
+  background: #000;
+  height: 100px;
+}
+
+#video .header_box {
+  display: none;
+}
+
+#video #main {
+  position: relative;
+}
+
+#video #main iframe {
+  width: 100%;
+  /* header, footer 공간을 제외한 영상 영역 */
+  height: calc(100vh - 200px);
+  background: #abc;
+  /* border: 2px solid green; */
+  display: block;
+}
+
+#main_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background: #000;
+  /* border: 1px solid yellow; */
+}
+
+#main_footer .sns { margin-top: 20px;}
+#main_footer .sns li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
